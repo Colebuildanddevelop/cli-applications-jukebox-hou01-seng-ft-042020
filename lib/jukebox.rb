@@ -52,7 +52,11 @@ def run
     user_input = gets.strip
     case user_input    
     when "play"
-      puts "play"
+      play(songs)
+    when "list"
+      list(songs)
+    when "help"
+      help
     end    
   end 
   exit_jukebox
